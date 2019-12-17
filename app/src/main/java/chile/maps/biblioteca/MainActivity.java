@@ -110,11 +110,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void Github(View v)
     {
-        //String[] datos   = {"Farenheit", "Revival", "El Alquimista", "El Poder", "El Despertar"};
-        //String[] precios = {"7000", "22000", "45000","88000","156000"};
-
-        String[] datos   = {"Farenheit", "Revival", "El Alquimista"};
-        String[] precios = {"5000", "12000", "45000"};
+        String[] datos   = {"Farenheit", "Revival", "El Alquimista", "El Poder", "El Despertar"};
+        String[] precios = {"7000", "22000", "45000","88000","156000"};
 
         Intent i = new Intent(this,Github_act.class);
         i.putExtra("libros2", datos);

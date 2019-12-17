@@ -62,7 +62,7 @@ public class Github_act extends AppCompatActivity {
             tv_id.setText("El Valor de Tesla es: "+ resultado);
         }
 
-       /* if(spn_id.getSelectedItem().equals("El Poder"))
+        if(spn_id.getSelectedItem().equals("El Poder"))
         {
 
             String precioP = precios[3];
@@ -78,6 +78,6 @@ public class Github_act extends AppCompatActivity {
             int precioLibro = Integer.parseInt(precioDespertar);
             int resultado = precioLibro;
             tv_id.setText("El Valor de El Despertar es: "+ resultado);
-        }*/
+        }
     }
 }
