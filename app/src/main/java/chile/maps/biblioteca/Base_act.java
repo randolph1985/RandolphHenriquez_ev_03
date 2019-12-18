@@ -18,9 +18,9 @@ public class Base_act extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_base_act);
 
-        et1 = (EditText)findViewById(R.id.cod);
-        et2 = (EditText)findViewById(R.id.nombre);
-        et3 = (EditText)findViewById(R.id.precio);
+        et1 = findViewById(R.id.cod);
+        et2 = findViewById(R.id.nombre);
+        et3 = findViewById(R.id.precio);
     }
 
     public void añadirOrdenador(View v)

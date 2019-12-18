@@ -40,6 +40,7 @@
         android:layout_marginLeft="9dp"
         android:layout_marginBottom="28dp"
         android:background="@android:color/transparent"
+        android:onClick="Seguriad"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton2"
         app:layout_constraintStart_toStartOf="parent"

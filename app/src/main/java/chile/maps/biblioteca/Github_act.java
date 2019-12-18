@@ -18,8 +18,8 @@ public class Github_act extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_github_act);
 
-        spn_id = (Spinner)findViewById(R.id.spn_id);
-        tv_id = (TextView)findViewById(R.id.tv_id);
+        spn_id = findViewById(R.id.spn_id);
+        tv_id = findViewById(R.id.tv_id);
 
         Bundle dat = getIntent().getExtras();
         String[] lista = dat.getStringArray("libros2");

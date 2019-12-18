@@ -19,7 +19,7 @@ public class Home_act extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_act);
 
-        vf = (ViewFlipper)findViewById(R.id.slider);
+        vf = findViewById(R.id.slider);
 
         for(int i = 0; i<images.length ;i++)
         {
@@ -59,6 +59,12 @@ public class Home_act extends AppCompatActivity {
     public void Base(View view)
     {
         Intent i = new Intent(this, Base_act.class);
+        startActivity(i);
+    }
+
+    public void Seguriad(View view)
+    {
+        Intent i = new Intent(this, Sec_act.class);
         startActivity(i);
     }
 

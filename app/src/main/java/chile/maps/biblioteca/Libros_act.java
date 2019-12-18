@@ -2,6 +2,7 @@ package chile.maps.biblioteca;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -21,10 +22,10 @@ public class Libros_act extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_libros_act);
 
-        spn = (Spinner)findViewById(R.id.spn);
-        tv = (TextView)findViewById(R.id.result);
-        et1 = (EditText)findViewById(R.id.et1);
-        et2 = (EditText)findViewById(R.id.et2);
+        spn = findViewById(R.id.spn);
+        tv = findViewById(R.id.result);
+        et1 = findViewById(R.id.et1);
+        et2 = findViewById(R.id.et2);
 
         Bundle dat = getIntent().getExtras();
         String[] lista = dat.getStringArray("libros");
@@ -78,6 +79,12 @@ public class Libros_act extends AppCompatActivity {
             tv.setText("Stock disponible: " +stock+ "\n"
                     +"el precio final es: "+ resultado);
         }
+    }
+
+    public void mqtt(View view)
+    {
+        Intent i = new Intent(this, Mqtt_act.class);
+        startActivity(i);
     }
 
 }

@@ -22,10 +22,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        et1 = (EditText)findViewById(R.id.et1);
-        et2 = (EditText)findViewById(R.id.et2);
-        btn = (Button)findViewById(R.id.btn);
-        pb = (ProgressBar)findViewById(R.id.pb);
+        et1 = findViewById(R.id.et1);
+        et2 = findViewById(R.id.et2);
+        btn = findViewById(R.id.btn);
+        pb = findViewById(R.id.pb);
 
         pb.setVisibility(View.INVISIBLE); // hace invisible el elemento.
 
